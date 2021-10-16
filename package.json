@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "npm install",
+    "dbsetup": "knex migrate:latest && knex seed:run"
+  },
+  "engine": {
+    "node": "16.1.0"
   },
   "keywords": [],
   "author": "",
