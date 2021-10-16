@@ -1,10 +1,4 @@
 module.exports = {
   client: 'mysql',
-  connection: {
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'rootroot',
-    database: 'SmartAdventures',
-    charset: 'utf8',
-  },
+  connection: process.env.JAWSDB_URL
 };
